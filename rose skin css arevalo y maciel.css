@@ -1,0 +1,101 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #ffe6f0;
+    color: #333;
+}
+
+/* --- ENCABEZADO --- */
+header {
+    background-color: #ffcce0;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #a33d68;
+    font-size: 2.5em;
+}
+
+/* --- NAVEGACIÓN --- */
+nav {
+    background-color: #ffb6c1;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a33d68;
+}
+
+/* --- SECCIONES --- */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #a33d68;
+    margin-bottom: 20px;
+}
+
+/* --- PRODUCTOS --- */
+.productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.producto {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 250px;
+    padding: 20px;
+}
+
+/* --- BOTONES --- */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #a33d68;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #7e2f52;
+}
+
+/* --- PIE DE PÁGINA --- */
+footer {
+    background-color: #ffcce0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #a33d68;
+}
+
+/* --- RESPONSIVE (celulares) --- */
+@media (max-width: 768px) {
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        width: 80%;
+    }
+}
